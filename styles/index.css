@@ -1,0 +1,32 @@
+body {
+	background: #2f2f2f;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	animation-duration: 6s;
+	animation-name: fadein;
+	color: #8e9b90;
+	text-shadow: 2px 2px 1px #e8f1f2;
+	font-size: 8vw;
+}
+
+span {
+	color: #e27e5f;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 100;
+	}
+}
