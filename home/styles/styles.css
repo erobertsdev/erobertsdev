@@ -17,12 +17,6 @@ header {
 	height: 100px;
 }
 
-@media all and (max-width: 900px) {
-	header {
-		justify-content: center;
-	}
-}
-
 nav {
 	display: flex;
 }
@@ -77,7 +71,7 @@ h1 {
 }
 
 #profile {
-	max-width: 25%;
+	width: 450px;
 	margin: 0 auto;
 	padding: 1px;
 	border: 2px solid #e27e5f;
@@ -96,5 +90,20 @@ h3 {
 	}
 	to {
 		opacity: 100;
+	}
+}
+
+@media all and (max-width: 750px) {
+	header {
+		justify-content: center;
+	}
+	#profile {
+		width: 300px;
+	}
+	h1 {
+		font-size: 4rem;
+	}
+	h3 {
+		font-size: 2.5rem;
 	}
 }
