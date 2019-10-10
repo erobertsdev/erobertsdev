@@ -1,19 +1,19 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Muli:400, 700&display=swap';
 
 * {
 	margin: 0;
 	padding: 0;
 }
 
-html {
-	font-family: Montserrat, sans-serif;
+body {
+	font-family: Muli, Arial, Helvetica, sans-serif;
 }
 
 header {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	background-color: #2f2f2f;
+	background-color: #465c69;
 	height: 100px;
 }
 
@@ -63,20 +63,25 @@ about {
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
-	height: 750px;
-	background-color: #2f2f2f;
+	height: 500px;
+	background-color: #465c69;
 }
 
 h1 {
 	padding: 20px;
-	font-size: 6rem;
+	font-size: 8vw;
 	color: #8e9b90;
+	animation-name: grow;
+	animation-duration: 1s;
 }
 
 h3 {
-	padding: 20px;
-	font-size: 3rem;
+	padding-left: 20px;
+	font-size: 3vw;
 	color: #8e9b90;
+	animation-name: slidein;
+	animation-duration: 1s;
+	transition-timing-function: ease-in-out;
 }
 
 #slash {
@@ -85,6 +90,15 @@ h3 {
 
 #cloud {
 	color: #e27e5f;
+}
+
+projects {
+	height: 500px;
+	display: flex;
+	font-weight: 700;
+	justify-content: center;
+	background-color: #e8f1f2;
+	color: #2f2f2f;
 }
 
 @keyframes fadein {
@@ -96,16 +110,43 @@ h3 {
 	}
 }
 
+@keyframes slidein {
+	0% {
+		transform: translate(0, 250%);
+	}
+	40% {
+		transform: translate(0, -100%);
+	}
+	100% {
+		transform: translate(0, 0%);
+	}
+}
+
+@keyframes grow {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
 @media all and (max-width: 950px) {
 	about {
 		align-items: flex-start;
 	}
+	header {
+		justify-content: space-around;
+	}
+	h1 {
+		font-size: 4rem;
+	}
+	h3 {
+		font-size: 2rem;
+	}
 }
 
 @media all and (max-width: 750px) {
-	header {
-		justify-content: center;
-	}
 	#profile {
 		width: 300px;
 	}
@@ -116,6 +157,7 @@ h3 {
 		font-size: 2rem;
 	}
 	about {
-		height: 520px;
+		padding-top: 10px;
+		height: 350px;
 	}
 }
