@@ -58,8 +58,11 @@ a.nav-link:hover:before {
 }
 
 about {
-	display: block;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	flex-wrap: wrap;
 	height: 750px;
 	background-color: #2f2f2f;
 }
@@ -70,18 +73,18 @@ h1 {
 	color: #8e9b90;
 }
 
-#profile {
-	width: 450px;
-	margin: 0 auto;
-	padding: 1px;
-	border: 2px solid #e27e5f;
-	border-radius: 50%;
-}
-
 h3 {
 	padding: 20px;
 	font-size: 3rem;
 	color: #8e9b90;
+}
+
+#slash {
+	color: #e8f1f2;
+}
+
+#cloud {
+	color: #e27e5f;
 }
 
 @keyframes fadein {
