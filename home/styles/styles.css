@@ -58,9 +58,9 @@ a.nav-link:hover:before {
 }
 
 about {
+	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 	flex-wrap: wrap;
 	height: 750px;
@@ -96,6 +96,12 @@ h3 {
 	}
 }
 
+@media all and (max-width: 950px) {
+	about {
+		align-items: flex-start;
+	}
+}
+
 @media all and (max-width: 750px) {
 	header {
 		justify-content: center;
@@ -107,7 +113,7 @@ h3 {
 		font-size: 4rem;
 	}
 	h3 {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	about {
 		height: 520px;
