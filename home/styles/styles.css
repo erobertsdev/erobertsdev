@@ -15,6 +15,7 @@ header {
 	justify-content: flex-end;
 	background-color: #465c69;
 	height: 100px;
+	border-bottom: 1.5px solid #2f2f2f;
 }
 
 nav {
@@ -58,7 +59,7 @@ a.nav-link:hover:before {
 	transform: scaleX(0.75);
 }
 
-about {
+#jumbo {
 	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
@@ -101,7 +102,7 @@ h4 {
 	color: #e27e5f;
 }
 
-projects {
+#about {
 	padding: 20px;
 	height: 500px;
 	display: flex;
@@ -116,7 +117,7 @@ projects {
 	flex-grow: 1;
 }
 
-#cloud-engineering {
+#devops-engineering {
 	flex-grow: 1;
 }
 
@@ -151,7 +152,7 @@ projects {
 }
 
 @media all and (max-width: 950px) {
-	about {
+	#jumbo {
 		align-items: flex-start;
 		height: 350px;
 	}
@@ -164,7 +165,7 @@ projects {
 	h3 {
 		font-size: 3rem;
 	}
-	projects {
+	#about {
 		flex-direction: column;
 	}
 }
@@ -179,7 +180,7 @@ projects {
 	h3 {
 		font-size: 2rem;
 	}
-	about {
+	#jumbo {
 		padding-top: 10px;
 		height: 250px;
 	}
