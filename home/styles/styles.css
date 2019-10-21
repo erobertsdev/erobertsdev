@@ -99,7 +99,12 @@ h4.light {
 i {
 	font-size: 5rem;
 	padding: 20px;
-	color: #8e9b90;
+	color: #465c69;
+}
+
+i:hover {
+	color: #e27e5f;
+	transition: 0.5s color;
 }
 
 #slash {
@@ -114,6 +119,7 @@ i {
 	padding: 20px;
 	height: 500px;
 	display: flex;
+	flex-wrap: wrap;
 	font-weight: 700;
 	text-align: center;
 	justify-content: center;
@@ -122,24 +128,29 @@ i {
 }
 
 #web-development {
-	flex-grow: 1;
+	flex: 0.5vw;
 }
 
 #mobile {
-	flex-grow: 1;
+	flex: 0.5vw;
 }
 
 #projects {
+	display: flex;
+	justify-content: center;
 	height: 500px;
 	background-color: #465c69;
 }
 
+#contact {
+	height: 500px;
+}
+
 footer {
-	padding-top: 10px;
 	height: 50px;
 	background-color: #465c69;
 	display: flex;
-	justify-content: center;
+	align-items: center;
 }
 
 .fadein {
