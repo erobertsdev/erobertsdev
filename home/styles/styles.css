@@ -127,6 +127,11 @@ i:hover {
 	color: #2f2f2f;
 }
 
+p.about {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 #web-development {
 	flex: 0.5vw;
 	border-right: 2px solid #465c69;
@@ -136,14 +141,15 @@ i:hover {
 	flex: 0.5vw;
 }
 
-#projects {
-	display: flex;
-	justify-content: center;
-	height: 500px;
+.carousel {
+	margin: 20px auto;
+	height: 50%;
+	width: 50%;
 	background-color: #465c69;
 }
 
 #contact {
+	background-color: #465c69;
 	height: 500px;
 }
 
@@ -152,6 +158,7 @@ footer {
 	background-color: #465c69;
 	display: flex;
 	align-items: center;
+	border-top: 1px solid #e8f1f2;
 }
 
 .fadein {
