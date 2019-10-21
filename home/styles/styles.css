@@ -14,7 +14,7 @@ header {
 	align-items: center;
 	justify-content: flex-end;
 	background-color: #465c69;
-	height: 100px;
+	height: 50px;
 	border-bottom: 1px solid #e8f1f2;
 }
 
@@ -60,7 +60,7 @@ a.nav-link:hover:before {
 }
 
 #jumbo {
-	padding-top: 50px;
+	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
