@@ -1,245 +1,106 @@
-@import 'https://fonts.googleapis.com/css?family=Muli:400, 700&display=swap';
-
-* {
+*,
+*::after,
+*::before {
 	margin: 0;
 	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
 }
 
 body {
 	font-family: Muli, Arial, Helvetica, sans-serif;
 }
 
-header {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	background-color: #465c69;
-	height: 50px;
-	border-bottom: 1px solid #e8f1f2;
+.logo-box {
+	background-color: #2f2f2fb2;
+	border: .15rem solid #e8f1f2a6;
+	border-radius: 1.7rem;
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
 }
 
-nav {
-	display: flex;
+.logo-box:hover {
+	background-color: #2f2f2f;
+	transition: all .5s;
+	cursor: pointer;
 }
 
-a {
-	padding: 0 20px;
-	color: #e27e5f;
-	text-decoration: none;
-	font-size: 30px;
-	flex-grow: 1;
-	transition: 0.3s color;
+.logo {
+	height: 4rem;
+	padding: 5px;
 }
 
-a.nav-link {
+.header {
+	height: 80vh;
+	background-image: linear-gradient(#8e9b90c2, #465c69c2), url(../images/cabezon-peak.jpg);
+	background-size: cover;
+	background-position: center;
 	position: relative;
 }
 
-a.nav-link:before {
-	content: "";
+.heading-main {
 	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	background-color: #e8f1f2;
-	visibility: hidden;
-	transform: scaleX(0);
-	transition: all 0.3s ease-in-out;
-}
-
-a:hover {
-	color: #8e9b90;
-}
-
-a.nav-link:hover:before {
-	visibility: visible;
-	transform: scaleX(0.75);
-}
-
-#jumbo {
-	padding-top: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex-wrap: wrap;
-	height: 400px;
-	background-color: #465c69;
-}
-
-h1 {
-	padding: 20px;
-	font-size: 9.2rem;
-	color: #8e9b90;
-	animation-name: grow;
-	animation-duration: 1s;
-}
-
-h3 {
-	padding-left: 20px;
-	font-size: 3rem;
-	color: #8e9b90;
-	animation-name: slidein;
-	animation-duration: 1s;
-	transition-timing-function: ease-in-out;
-}
-
-h4.dark {
-	font-size: 2.5rem;
-	color: #465c69;
-	padding: 20px;
-}
-
-h4.light {
-	font-size: 2.5rem;
-	color: #8e9b90;
-	padding: 20px;
-}
-
-i {
-	font-size: 5rem;
-	padding: 20px;
-	color: #465c69;
-}
-
-i:hover {
-	color: #e27e5f;
-	transition: 0.5s color;
-}
-
-#slash {
-	color: #e8f1f2;
-}
-
-#cloud {
-	color: #e27e5f;
-}
-
-#about {
-	padding: 20px;
-	height: 500px;
-	display: flex;
-	flex-wrap: wrap;
-	font-weight: 700;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	text-align: center;
-	justify-content: center;
-	background-color: #e8f1f2;
-	color: #2f2f2f;
 }
 
-p.about {
-	padding-left: 10px;
-	padding-right: 10px;
+.heading-main-name {
+	font-size: 9rem;
+	letter-spacing: .7rem;
+	display: block;
+	color: #2f2f2fb2;
+	text-transform: uppercase;
+	cursor: default;
+
+	animation: fadeInTop 1.5s ease-in-out;
 }
 
-#web-development {
-	flex: 0.5vw;
-	border-right: 2px solid #465c69;
+.heading-main-sub {
+	display: block;
+	letter-spacing: 1.5rem;
+	color: #92b4a7;
+	font-weight: 900;
+	cursor: default;
+
+	animation: fadeInBottom 1s ease-out .5s;
+	animation-fill-mode: backwards;
 }
 
-#mobile {
-	flex: 0.5vw;
+.heading-main-name::selection,
+.heading-main-sub::selection {
+	background: #e8f1f2;
 }
 
-.carousel {
-	margin: 20px auto;
-	height: 50%;
-	width: 50%;
-	background-color: #465c69;
-}
-
-#contact {
-	background-color: #465c69;
-	height: 500px;
-}
-
-footer {
-	height: 50px;
-	background-color: #465c69;
-	display: flex;
-	align-items: center;
-	border-top: 1px solid #e8f1f2;
-}
-
-.fadein {
-	animation-name: fadein;
-	animation-duration: 2.5s;
-}
-
-.orange-to-green {
-	padding: 0 20px;
-	color: #e27e5f;
-	text-decoration: none;
-	font-size: 30px;
-	flex-grow: 1;
-	transition: 0.3s color;
-}
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 100;
-	}
-}
-
-@keyframes slidein {
+@keyframes fadeInTop {
 	0% {
-		transform: translate(0, 250%);
+		opacity: 0;
+		transform: translateY(-15rem);
 	}
-	40% {
-		transform: translate(0, -100%);
+	80% {
+		transform: translateY(1rem);
 	}
 	100% {
-		transform: translate(0, 0%);
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
 
-@keyframes grow {
-	from {
-		transform: scale(0);
+@keyframes fadeInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(15rem);
 	}
-	to {
-		transform: scale(1);
+	80% {
+		transform: translateY(-1rem);
 	}
-}
-
-@media all and (max-width: 950px) {
-	#jumbo {
-		align-items: flex-start;
-		height: 350px;
-	}
-	header {
-		justify-content: space-around;
-	}
-	h1 {
-		font-size: 6rem;
-	}
-	h3 {
-		font-size: 3rem;
-	}
-	#about {
-		flex-direction: column;
-	}
-	#web-development {
-		border-right: none;
-		border-bottom: 2px solid #465c69;
-	}
-}
-
-@media all and (max-width: 750px) {
-	#profile {
-		width: 300px;
-	}
-	h1 {
-		font-size: 4.5rem;
-	}
-	h3 {
-		font-size: 2rem;
-	}
-	#jumbo {
-		padding-top: 10px;
-		height: 250px;
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
