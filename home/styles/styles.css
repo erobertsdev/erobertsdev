@@ -19,14 +19,15 @@ body {
 	background-color: #2f2f2fb2;
 	color: #e8f1f2;
 	border: .15rem solid #e8f1f2a6;
-	border-radius: 1.7rem;
+	border-radius: 1rem;
 	position: absolute;
 	top: 2rem;
-	left: 2rem;
+	right: 2rem;
 }
 
 .menu-arrow {
-	padding: 10px;
+	color: #e8f1f2a6;
+	padding: 5px;
 }
 
 .logo-box:hover {
