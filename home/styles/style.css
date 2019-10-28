@@ -1,9 +1,6 @@
-*,
-*::after,
-*::before {
+* {
 	margin: 0;
 	padding: 0;
-	box-sizing: inherit;
 }
 
 html {
@@ -14,31 +11,51 @@ body {
 	font-family: Muli, Arial, Helvetica, sans-serif;
 }
 
-.logo-box {
+.menu-row {
+	position: relative;
+}
+
+.btn {
 	font-size: 3rem;
 	background-color: #2f2f2fb2;
-	color: #e8f1f2;
+	color: #e8f1f2a6;
 	border: .15rem solid #e8f1f2a6;
 	border-radius: 1rem;
+	padding: 5px;
+	transition: all .5s;
+	text-align: center;
+	width: 35px;
+	height: 35px;
+	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+}
+
+.info {
+	font-size: 2rem;
+	color: #e8f1f2a6;
+	position: absolute;
+	top: 1.5rem;
+	left: 2rem;
+	transition: all .5s;
+	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+}
+
+.info:hover {
+	transform: scale(1.1);
+	backface-visibility: hidden;
+	color: #e8f1f2;
+	cursor: pointer;
+}
+
+.btn-menu {
 	position: absolute;
 	top: 2rem;
 	right: 2rem;
 }
 
-.menu-arrow {
-	color: #e8f1f2a6;
-	padding: 5px;
-}
-
-.logo-box:hover {
+.btn:hover {
+	color: #e8f1f2;
 	background-color: #2f2f2f;
-	transition: all .5s;
 	cursor: pointer;
-}
-
-.logo {
-	height: 4rem;
-	padding: 5px;
 }
 
 .header {
