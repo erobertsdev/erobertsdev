@@ -127,6 +127,7 @@ a {
 	display: grid;
 	grid-template-columns: 45% auto 45%;
 	grid-template-rows: 45% auto 45%;
+	text-align: center;
 	justify-items: center;
 	align-items: center;
 }
@@ -147,6 +148,36 @@ a {
 .main-4 {
 	grid-column-start: 3;
 	grid-row-start: 3;
+}
+
+.contact {
+	background-color: #465c69;
+	color: #e8f1f2;
+	display: grid;
+}
+
+footer {
+	font-size: 1.5rem;
+	display: grid;
+	grid-template-columns: 20% auto 20%;
+	justify-items: center;
+	align-items: center;
+	min-height: 10vh;
+	background-image: linear-gradient(#465c69c2, #8e9b90c2), url(../images/footer-bg2.jpg);
+	background-size: cover;
+	background-position: 0 55%;
+	padding: 20px;
+}
+
+.fab {
+	color: #e8f1f28a;
+	font-size: 4rem;
+	padding: 10px;
+	transition: all .5s;
+}
+
+.fab:hover {
+	color: #e8f1f2;
 }
 
 @keyframes fadein {
@@ -184,83 +215,4 @@ a {
 		opacity: 1;
 		transform: translateY(0);
 	}
-}
-
-footer {
-	font-size: 1.5rem;
-	display: grid;
-	grid-template-columns: 20% auto 20%;
-	justify-items: center;
-	align-items: center;
-	min-height: 10vh;
-	background-image: linear-gradient(#465c69c2, #8e9b90c2), url(../images/footer-bg2.jpg);
-	background-size: cover;
-	background-position: 0 55%;
-	padding: 20px;
-}
-
-.fab {
-	color: #e8f1f28a;
-	font-size: 4rem;
-	padding: 10px;
-	transition: all .5s;
-}
-
-.fab:hover {
-	color: #e8f1f2;
-}
-
-.contact {
-	background-image: linear-gradient(#e8f1f2, #8e9b90);
-	color: #e8f1f2;
-	display: grid;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea {
-	max-width: 60vw;
-	border: none;
-	background: #2f2f2f9c;
-	color: #e8f1f2;
-	margin: 0 0 5px;
-	padding: 10px;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact textarea:hover {
-	transition: all 0.3s ease-in-out;
-	border: 1px solid #8e9b90;
-}
-
-#contact textarea {
-	height: 100px;
-	max-width: 60vw;
-}
-
-#contact button[type="submit"] {
-	cursor: pointer;
-	max-width: 25vw;
-	border: none;
-	background-color: #e27d5fb6;
-	color: #e8f1f2;
-	margin: 0 0 5px;
-	padding: 10px;
-	font-size: 15px;
-}
-
-#contact button[type="submit"]:hover {
-	background-color: #e27d5f;
-	transition: background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active {
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-#contact input:focus,
-#contact textarea:focus {
-	outline: 0;
-	border: 1px solid #8e9b90;
 }
