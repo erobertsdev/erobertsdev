@@ -9,6 +9,7 @@ html {
 
 body {
 	font-family: Muli, Arial, Helvetica, sans-serif;
+	margin: 3rem;
 }
 
 a {
@@ -71,7 +72,7 @@ a {
 }
 
 .header {
-	height: 80vh;
+	height: 70vh;
 	background-image: linear-gradient(#8e9b90c2, #465c69c2), url(../images/cabezon-peak.jpg);
 	background-size: cover;
 	background-position: center;
@@ -81,7 +82,8 @@ a {
 
 .header-2 {
 	font-size: 2.5rem;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .heading-main {
@@ -130,6 +132,12 @@ a {
 	text-align: center;
 	justify-items: center;
 	align-items: center;
+}
+
+.info-icon {
+	font-size: 6rem;
+	padding-bottom: 10px;
+	color: #465c69;
 }
 
 .main-1 {
