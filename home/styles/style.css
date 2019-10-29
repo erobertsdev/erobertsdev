@@ -17,45 +17,33 @@ body {
 
 .btn {
 	font-size: 3rem;
-	background-color: #2f2f2fb2;
 	color: #e8f1f2a6;
-	border: .15rem solid #e8f1f2a6;
-	border-radius: 1rem;
-	padding: 5px;
 	transition: all .5s;
-	text-align: center;
 	width: 35px;
 	height: 35px;
 	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
-}
-
-.info {
-	font-size: 2rem;
-	color: #e8f1f2a6;
-	position: absolute;
-	top: 1.5rem;
-	left: 2rem;
 	transition: all .5s;
-	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
 }
 
-.info:hover {
-	transform: scale(1.1);
+.btn:hover {
+	transform: scale(1.05);
 	backface-visibility: hidden;
 	color: #e8f1f2;
 	cursor: pointer;
+	filter: drop-shadow(2.5px 2.5px 3px rgba(0, 0, 0, 0.7));
+}
+
+.btn-info {
+	font-size: 2rem;
+	position: absolute;
+	top: 1.5rem;
+	left: 2rem;
 }
 
 .btn-menu {
 	position: absolute;
-	top: 2rem;
+	top: 1.5rem;
 	right: 2rem;
-}
-
-.btn:hover {
-	color: #e8f1f2;
-	background-color: #2f2f2f;
-	cursor: pointer;
 }
 
 .header {
