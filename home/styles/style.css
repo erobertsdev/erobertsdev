@@ -1,3 +1,12 @@
+/*
+Dark gray: #2f2f2f
+Blue: #465c69
+Orange: #e27e5f
+Green: #8e9b90
+Light-Green: #92b4a7
+White: #e8f1f2
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -81,6 +90,7 @@ a {
 }
 
 .header-2 {
+	color: #465c69;
 	font-size: 2.5rem;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -138,16 +148,42 @@ a {
 	font-size: 6rem;
 	padding-bottom: 10px;
 	color: #465c69;
+	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.info-icon:hover {
+	font-size: 6rem;
+	padding-bottom: 10px;
+	color: #465c69;
+	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.info-list {
+	list-style: none;
+}
+
+.info-list--li {
+	padding: 10px;
+	margin: 0 auto;
+	width: 30%;
+}
+
+.info-list--li:not(:last-child) {
+	border-bottom: 1px solid #465c69a2;
 }
 
 .main-1 {
 	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-row-end: last-line;
 }
 
 .main-2 {
 	grid-column-start: 3;
+	grid-row-start: 1;
+	grid-row-end: last-line;
 }
-
+/* 
 .main-3 {
 	grid-column-start: 1;
 	grid-row-start: 3;
@@ -156,7 +192,7 @@ a {
 .main-4 {
 	grid-column-start: 3;
 	grid-row-start: 3;
-}
+} */
 
 .contact {
 	background-color: #465c69;
