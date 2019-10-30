@@ -79,24 +79,44 @@ a {
 	right: 2rem;
 }
 
+/* .btn-projects {
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 15px;
+	padding: 20px 35px;
+	background-color: #465c69ab;
+	color: #e8f1f2;
+	position: absolute;
+	top: 60%;
+	left: 46%;
+
+	animation: fadein 1.5s ease-in 1s;
+	animation-fill-mode: backwards;
+	transition: all 0.3s;
+}
+
+.btn-projects:hover {
+	background-color: #465c69c4;
+	transform: translateY(-2px);
+	cursor: pointer;
+	filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.btn-projects:active {
+	background-color: #465c69c4;
+	transform: translateY(-1px);
+	cursor: pointer;
+	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+} */
+
 .header {
-	height: 90vh;
+	height: 100vh;
 	background-image: linear-gradient(#8e9b90c2, #465c69c2), url(../images/cabezon-peak.jpg);
 	background-size: cover;
 	background-position: center;
 	/* background-attachment: fixed; */
 	position: relative;
-}
-
-.header-2 {
-	font-size: 3rem;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.header-2-card {
-	color: #e8f1f2c7;
-	letter-spacing: .5rem;
 }
 
 .heading-main {
@@ -147,6 +167,18 @@ a {
 	align-items: center;
 }
 
+.header-2 {
+	font-size: 3rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.header-2-card {
+	text-transform: uppercase;
+	color: #e8f1f2c7;
+	letter-spacing: .5rem;
+}
+
 .info-icon {
 	font-size: 6rem;
 	padding-bottom: 10px;
@@ -169,6 +201,7 @@ a {
 
 .main-1 {
 	padding: 20px;
+	grid-area: design;
 	grid-column-start: 1;
 	grid-row-start: 1;
 	grid-row-end: last-line;
@@ -193,6 +226,7 @@ a {
 
 .main-2 {
 	padding: 20px;
+	grid-area: develop;
 	grid-column-start: 3;
 	grid-row-start: 1;
 	grid-row-end: last-line;
@@ -210,6 +244,10 @@ a {
 	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
 }
 
+.grid {
+	grid-template-areas: 'design develop';
+}
+
 p {
 	line-height: 150%;
 }
@@ -222,6 +260,7 @@ p {
 }
 
 .contact-header {
+	text-transform: uppercase;
 	color: #92b4a7be;
 	letter-spacing: .5rem;
 }
@@ -276,6 +315,7 @@ button {
 	color: #e8f1f2;
 	font-weight: bold;
 	transition: all .3s;
+	text-transform: uppercase;
 }
 
 button:hover {
@@ -298,7 +338,7 @@ button:focus {
 footer {
 	font-size: 1.5rem;
 	display: grid;
-	grid-template-columns: 20% auto 20%;
+	grid-template-columns: 20% 5% auto 5% 20%;
 	justify-items: center;
 	align-items: center;
 	min-height: 10vh;
@@ -308,14 +348,26 @@ footer {
 	padding: 20px;
 }
 
-.fab {
+.footer-cr {
+	grid-column-start: 1;
+}
+
+.footer-p {
+	grid-column-start: 3;
+}
+
+.footer-social {
+	grid-column-start: 5;
+}
+
+.ico {
 	color: #e8f1f28a;
 	font-size: 4rem;
 	padding: 10px;
 	transition: all .5s;
 }
 
-.fab:hover {
+.ico:hover {
 	color: #e8f1f2;
 }
 
@@ -353,5 +405,23 @@ footer {
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+/* @media all and (max-width: 1000px) {
+	.grid {
+		grid-template-areas: 'design' 'develop';
+	}
+} */
+
+@media all and (max-width: 750px) {
+	.heading-main-name {
+		font-size: 6rem;
+	}
+	.heading-main-sub {
+		font-size: 2.5rem;
+	}
+	textarea {
+		min-width: 85%;
 	}
 }
