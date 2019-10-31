@@ -293,6 +293,7 @@ input {
 input:focus {
 	outline: none;
 	background-color: #e8f1f2c7;
+	border-bottom: 3px solid #e27e5f;
 }
 
 textarea {
@@ -311,6 +312,7 @@ textarea {
 textarea:focus {
 	outline: none;
 	background-color: #e8f1f2c7;
+	border-bottom: 3px solid #e27e5f;
 }
 
 button {
@@ -364,7 +366,7 @@ footer {
 	grid-column-start: 3;
 }
 
-.footer-social {
+.footer-soc {
 	grid-column-start: 5;
 }
 
