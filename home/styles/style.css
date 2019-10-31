@@ -44,7 +44,7 @@ a {
 	width: 35px;
 	height: 35px;
 	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
-	transition: all .3s;
+	transition: all .2s;
 
 	animation: fadein 1.5s ease-in 1s;
 	animation-fill-mode: backwards;
@@ -66,49 +66,11 @@ a {
 	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
 }
 
-.btn-info {
-	font-size: 2rem;
-	position: absolute;
-	top: 1.5rem;
-	left: 2rem;
-}
-
 .btn-menu {
-	position: absolute;
-	top: 1.5rem;
-	right: 2rem;
+	position: fixed;
+	top: 1.2rem;
+	right: 4rem;
 }
-
-/* .btn-projects {
-	font-size: 1.4rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	border-radius: 15px;
-	padding: 20px 35px;
-	background-color: #465c69ab;
-	color: #e8f1f2;
-	position: absolute;
-	top: 60%;
-	left: 46%;
-
-	animation: fadein 1.5s ease-in 1s;
-	animation-fill-mode: backwards;
-	transition: all 0.3s;
-}
-
-.btn-projects:hover {
-	background-color: #465c69c4;
-	transform: translateY(-2px);
-	cursor: pointer;
-	filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
-}
-
-.btn-projects:active {
-	background-color: #465c69c4;
-	transform: translateY(-1px);
-	cursor: pointer;
-	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
-} */
 
 .header {
 	height: 80vh;
@@ -432,6 +394,11 @@ footer {
 		font-size: 2.5rem;
 	}
 	textarea {
+		font-size: 1.5rem;
 		min-width: 85%;
+	}
+	input {
+		min-width: 85%;
+		font-size: 1.5rem;
 	}
 }
