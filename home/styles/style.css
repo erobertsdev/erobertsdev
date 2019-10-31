@@ -293,7 +293,7 @@ input {
 input:focus {
 	outline: none;
 	background-color: #e8f1f2c7;
-	border-bottom: 3px solid #e27e5f;
+	border-bottom: 3px solid #465c69;
 }
 
 textarea {
@@ -312,7 +312,7 @@ textarea {
 textarea:focus {
 	outline: none;
 	background-color: #e8f1f2c7;
-	border-bottom: 3px solid #e27e5f;
+	border-bottom: 3px solid #465c69;
 }
 
 button {
