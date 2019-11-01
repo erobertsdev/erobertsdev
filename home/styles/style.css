@@ -77,7 +77,6 @@ a {
 	background-image: linear-gradient(#8e9b90c2, #465c69c2), url(../images/cabezon-peak.jpg);
 	background-size: cover;
 	background-position: center;
-	/* background-attachment: fixed; */
 	position: relative;
 }
 
@@ -120,62 +119,53 @@ hr {
 	margin: 10px;
 }
 
-.heading-main-name::selection,
-.heading-main-sub::selection {
-	background: #e8f1f2;
-}
-
 .main {
 	font-size: 1.5rem;
 	background-color: #e8f1f2;
-	padding: 7rem 2rem;
-	display: grid;
-	grid-template-columns: 50% auto 50%;
-	grid-template-rows: 45% auto 45%;
+	padding: 3.5rem 2rem;
 	text-align: center;
-	justify-items: center;
-	align-items: center;
 }
 
 .header-2 {
-	font-size: 3rem;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	font-size: 2.5rem;
+	padding: 20px;
+	text-transform: uppercase;
+	color: #92b4a7be;
+	letter-spacing: .5rem;
 }
 
-.header-2-card {
-	text-transform: uppercase;
-	color: #e8f1f2c7;
-	letter-spacing: .5rem;
+h3 {
+	color: #2f2f2fd7;
+	padding: 20px;
+}
+
+.icon {
+	font-size: 4.5rem;
+}
+
+.development {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(150px, auto);
+}
+
+.infosys {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: minmax(150px, auto);
 }
 
 .info-icon {
 	font-size: 6rem;
 	padding-bottom: 10px;
-	color: #e8f1f2c7;
 }
 
-.info-list {
-	list-style: none;
-}
-
-.info-list--li {
-	padding: 10px;
-	margin: 0 auto;
-	width: 40%;
-}
-
-.info-list--li:not(:last-child) {
-	border-bottom: 1px solid #465c693d;
-}
-
-.main-1 {
+.main-development {
 	padding: 20px;
 	grid-area: design;
 	grid-column-start: 1;
-	grid-row-start: 1;
-	grid-row-end: last-line;
-	width: 80%;
 	background-image: linear-gradient(#8e9b90c2, #465c69c2), url(../images/design.jpg);
 	background-size: cover;
 	background-position: center;
@@ -184,42 +174,8 @@ hr {
 	transition: all 0.3s;
 }
 
-.main-1:hover {
-	transform: scale(1.01);
-	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
-}
-
-.main--text {
-	color: #e8f1f2;
-	backdrop-filter: blur(2px);
-}
-
-.main-2 {
-	padding: 20px;
-	grid-area: develop;
-	grid-column-start: 3;
-	grid-row-start: 1;
-	grid-row-end: last-line;
-	width: 80%;
-	background-image: linear-gradient(#8e9b90c2, #465c69c2), url(../images/develop.jpg);
-	background-size: cover;
-	background-position: center;
-	border-radius: 3px;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-	transition: all 0.3s;
-}
-
-.main-2:hover {
-	transform: scale(1.01);
-	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
-}
-
-.grid {
-	grid-template-areas: 'design develop';
-}
-
 p {
-	line-height: 150%;
+	line-height: 1.5rem;
 }
 
 .contact {
@@ -227,12 +183,6 @@ p {
 	text-align: center;
 	background-color: #465c69b6;
 	color: #e8f1f2;
-}
-
-.contact-header {
-	text-transform: uppercase;
-	color: #92b4a7be;
-	letter-spacing: .5rem;
 }
 
 form {
@@ -379,12 +329,6 @@ footer {
 		transform: translateY(0);
 	}
 }
-
-/* @media all and (max-width: 1000px) {
-	.grid {
-		grid-template-areas: 'design' 'develop';
-	}
-} */
 
 @media all and (max-width: 750px) {
 	.heading-main-name {
