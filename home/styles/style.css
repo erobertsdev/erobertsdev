@@ -33,16 +33,20 @@ a {
 	color: #2f2f2f;
 }
 
-.menu-row {
-	position: relative;
+.menu .menu-checkbox {
+	display: none;
 }
 
-.btn {
+.menu .btn-menu {
+	position: fixed;
+	top: 1.2rem;
+	right: 4rem;
 	font-size: 3rem;
 	color: #e8f1f2a6;
 	transition: all .5s;
 	width: 35px;
 	height: 35px;
+	z-index: 1005;
 	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
 	transition: all .2s;
 
@@ -50,7 +54,7 @@ a {
 	animation-fill-mode: backwards;
 }
 
-.btn:hover {
+.menu .btn-menu:hover {
 	transform: scale(1.05);
 	backface-visibility: hidden;
 	color: #e8f1f2;
@@ -58,7 +62,7 @@ a {
 	filter: drop-shadow(2.5px 2.5px 3px rgba(0, 0, 0, 0.7));
 }
 
-.btn:active {
+.menu .btn-menu:active {
 	transform: scale(1);
 	backface-visibility: hidden;
 	color: #92b4a7;
@@ -66,10 +70,59 @@ a {
 	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
 }
 
-.btn-menu {
+.menu-background {
+	height: 0;
+	width: 0;
 	position: fixed;
 	top: 1.2rem;
 	right: 4rem;
+	background-color: #2f2f2fc0;
+	z-index: 1000;
+
+	/* transform: scale(80); */
+}
+
+.menu-nav {
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1001;
+
+	opacity: 0;
+	width: 0;
+}
+
+.menu-list {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(550%, -70%);
+	list-style: none;
+	text-align: center;
+}
+
+.menu-item {
+	margin: 1rem;
+}
+
+.menu-link:link,
+.menu-link:visited {
+	font-size: 3rem;
+	font-weight: 300;
+	color: #e8f1f2;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .2s;
+}
+
+.menu-link:hover,
+.menu-link:active {
+	color: #92b4a7;
+}
+
+.menu-checkbox:checked ~ .menu-background {
+	transform: scale(80);
 }
 
 .header {
@@ -150,16 +203,18 @@ h3 {
 
 .development {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 20px;
+	grid-template-columns: repeat(4, 250px);
+	grid-gap: 30px;
 	grid-auto-rows: minmax(150px, auto);
+	justify-content: center;
 }
 
-.infosys {
+.projects {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 20px;
+	grid-template-columns: repeat(4, 250px);
+	grid-gap: 30px;
 	grid-auto-rows: minmax(150px, auto);
+	justify-content: center;
 }
 
 .info-icon {
