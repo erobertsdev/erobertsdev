@@ -219,16 +219,20 @@ h3 {
 
 .development {
 	display: grid;
-	grid-template-columns: repeat(4, 250px);
-	grid-gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+	grid-gap: 40px;
 	grid-auto-rows: minmax(150px, auto);
 	justify-content: center;
 }
 
 .projects {
 	display: grid;
-	grid-template-columns: repeat(4, 250px);
-	grid-gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+	grid-gap: 40px;
 	grid-auto-rows: minmax(150px, auto);
 	justify-content: center;
 }
@@ -269,7 +273,7 @@ input {
 input:focus {
 	outline: none;
 	background-color: #e8f1f2c7;
-	border-bottom: 3px solid #465c69;
+	border-bottom: 3px solid #e27e5f;
 }
 
 textarea {
@@ -288,7 +292,7 @@ textarea {
 textarea:focus {
 	outline: none;
 	background-color: #e8f1f2c7;
-	border-bottom: 3px solid #465c69;
+	border-bottom: 3px solid #e27e5f;
 }
 
 button {
@@ -354,7 +358,7 @@ footer {
 }
 
 .ico:hover {
-	color: #e8f1f2;
+	color: #e27e5f;
 }
 
 @keyframes fadein {
