@@ -97,7 +97,7 @@ a {
 .menu-list {
 	position: fixed;
 	top: 15rem;
-	right: 15rem;
+	right: 12rem;
 	list-style: none;
 	text-align: center;
 }
