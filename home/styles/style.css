@@ -187,7 +187,7 @@ hr {
 }
 
 .header-2 {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	padding: 20px;
 	text-transform: uppercase;
 	color: #92b4a7;
@@ -200,13 +200,13 @@ hr {
 	background-size: 100% 200%;
 	background-image: linear-gradient(to bottom, #465c69c2 50%, #2f2f2f 50%);
 	transition: all .3s;
-	box-shadow: 5px 5px 5px #2f2f2f;
+	box-shadow: 8px 8px 8px #2f2f2f;
 }
 
 .card:hover {
 	background-position: 0 -100%;
 	transform: translateY(-10px);
-	box-shadow: 7px 10px 15px #2f2f2f;
+	box-shadow: 10px 13px 18px #2f2f2f;
 }
 
 .card-p {
@@ -214,33 +214,33 @@ hr {
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 3rem;
 	color: #92b4a7;
 	padding: 20px;
 }
 
 .icon {
 	color: #8e9b90;
-	font-size: 7rem;
+	font-size: 10rem;
 }
 
 .development {
 	display: grid;
-	max-width: 1200px;
-	margin: 0 auto;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+	max-width: 1600px;
+	margin: 20px auto;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
 	grid-gap: 40px;
-	grid-auto-rows: minmax(150px, auto);
+	grid-auto-rows: minmax(250px, auto);
 	justify-content: center;
 }
 
 .projects {
 	display: grid;
-	max-width: 1200px;
+	max-width: 1600px;
 	margin: 20px auto;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+	grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
 	grid-gap: 40px;
-	grid-auto-rows: minmax(150px, auto);
+	grid-auto-rows: minmax(250px, auto);
 	justify-content: center;
 }
 
