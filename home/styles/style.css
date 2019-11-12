@@ -79,7 +79,7 @@ a {
 	right: 4rem;
 	background-color: #2f2f2fe0;
 	z-index: 1000;
-	transition: all .5s;
+	transition: all .3s;
 }
 
 .menu-nav {
@@ -89,7 +89,7 @@ a {
 	left: 0;
 	z-index: -1;
 	opacity: 0;
-	transition: all .5s;
+	transition: all .3s;
 }
 
 .menu-list {
@@ -147,7 +147,7 @@ a {
 }
 
 .heading-main-name {
-	font-size: 10rem;
+	font-size: 11rem;
 	letter-spacing: .7rem;
 	display: block;
 	color: #2f2f2fb2;
@@ -409,10 +409,10 @@ footer {
 
 @media all and (max-width: 750px) {
 	.heading-main-name {
-		font-size: 6rem;
+		font-size: 6.5rem;
 	}
 	.heading-main-sub {
-		font-size: 2.5rem;
+		font-size: 3rem;
 	}
 	textarea {
 		font-size: 1.5rem;
