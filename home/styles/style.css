@@ -199,14 +199,18 @@ hr {
 	border-radius: 3px;
 	background-size: 100% 200%;
 	background-image: linear-gradient(to bottom, #465c69c2 50%, #2f2f2f 50%);
-	-webkit-transition: background-position 1s;
-	-moz-transition: background-position 1s;
-	transition: background-position .3s;
+	transition: all .3s;
 	box-shadow: 5px 5px 5px #2f2f2f;
 }
 
 .card:hover {
 	background-position: 0 -100%;
+	transform: translateY(-10px);
+	box-shadow: 7px 10px 15px #2f2f2f;
+}
+
+.card-p {
+	padding: 10px;
 }
 
 h3 {
