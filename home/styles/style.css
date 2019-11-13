@@ -223,6 +223,16 @@ h3 {
 	font-size: 10rem;
 }
 
+/* .main {
+	display: grid;
+	max-width: 1600px;
+	margin: 20px auto;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+	grid-gap: 40px;
+	grid-auto-rows: minmax(250px, auto);
+	justify-content: center;
+} */
+
 .development {
 	display: grid;
 	max-width: 1600px;
