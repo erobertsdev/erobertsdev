@@ -259,6 +259,7 @@ h3 {
 }
 
 .card-list {
+	padding: 10px;
 	list-style: none;
 	color: #e8f1f2;
 }
