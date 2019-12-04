@@ -12,6 +12,10 @@ White: #e8f1f2
 	padding: 0;
 }
 
+*::selection {
+	background: #e27e5f;
+}
+
 html {
 	font-size: 62.5%;
 }
