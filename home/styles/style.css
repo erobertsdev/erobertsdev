@@ -29,6 +29,13 @@ a {
 	color: #92b4a7;
 }
 
+a:hover {
+	color: #e27e5f;
+}
+a h3:hover {
+	color: #e27e5f;
+}
+
 .text-light {
 	color: #e8f1f2;
 }
