@@ -138,6 +138,8 @@ a h3:hover {
 .menu-checkbox:checked ~ .menu-nav {
 	opacity: 1;
 	z-index: 1001 !important;
+
+	animation: slideIn .5s;
 }
 
 .header {
@@ -426,6 +428,15 @@ footer {
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateX(200);
+	}
+	100% {
+		transform: translateX(0);
 	}
 }
 
