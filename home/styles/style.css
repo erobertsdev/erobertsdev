@@ -29,13 +29,6 @@ a {
 	color: #92b4a7;
 }
 
-a:hover {
-	color: #e27e5f;
-}
-a h3:hover {
-	color: #e27e5f;
-}
-
 .text-light {
 	color: #e8f1f2;
 }
@@ -212,6 +205,7 @@ hr {
 	background-image: linear-gradient(to bottom, #465c69c2 50%, #2f2f2f 50%);
 	transition: all .3s;
 	box-shadow: 8px 8px 8px #2f2f2f;
+	max-width: 350px;
 }
 
 .card:hover {
@@ -236,21 +230,12 @@ h3 {
 	font-size: 10rem;
 }
 
-/* .main {
-	display: grid;
-	max-width: 1600px;
-	margin: 20px auto;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
-	grid-gap: 40px;
-	grid-auto-rows: minmax(250px, auto);
-	justify-content: center;
-} */
-
 .development {
 	display: grid;
 	max-width: 1600px;
 	margin: 20px auto;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+	/* grid-template-columns: repeat(auto-fill, minmax(250px, 350px)); */
+	grid-template-columns: 350px 350px 350px;
 	grid-gap: 40px;
 	grid-auto-rows: minmax(250px, auto);
 	justify-content: center;
@@ -260,7 +245,7 @@ h3 {
 	display: grid;
 	max-width: 1600px;
 	margin: 20px auto;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+	grid-template-columns: repeat(auto-fill, minmax(auto, auto));
 	grid-gap: 40px;
 	grid-auto-rows: minmax(250px, auto);
 	justify-content: center;
@@ -440,6 +425,26 @@ footer {
 	}
 }
 
+@media all and (max-width: 1200px) {
+	.heading-main-name {
+		font-size: 6.5rem;
+	}
+	.heading-main-sub {
+		font-size: 3rem;
+	}
+	textarea {
+		font-size: 1.5rem;
+		min-width: 85%;
+	}
+	input {
+		min-width: 85%;
+		font-size: 1.5rem;
+	}
+	.development {
+		grid-template-columns: 350px 350px;
+	}
+}
+
 @media all and (max-width: 750px) {
 	.heading-main-name {
 		font-size: 6.5rem;
@@ -454,5 +459,8 @@ footer {
 	input {
 		min-width: 85%;
 		font-size: 1.5rem;
+	}
+	.development {
+		grid-template-columns: 300px;
 	}
 }
