@@ -219,6 +219,10 @@ hr {
 	line-height: 1.5rem;
 }
 
+.dev-7 {
+	grid-column-start: 2;
+}
+
 h3 {
 	font-size: 3rem;
 	color: #92b4a7;
@@ -442,6 +446,9 @@ footer {
 	}
 	.development {
 		grid-template-columns: 350px 350px;
+	}
+	.dev-7 {
+		grid-column-start: auto;
 	}
 }
 
