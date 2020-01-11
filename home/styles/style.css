@@ -249,7 +249,7 @@ h3 {
 	display: grid;
 	max-width: 1600px;
 	margin: 20px auto;
-	grid-template-columns: 350px 350px;
+	grid-template-columns: 350px 350px 350px;
 	grid-gap: 40px;
 	grid-auto-rows: minmax(250px, auto);
 	justify-content: center;
@@ -445,6 +445,9 @@ footer {
 		font-size: 1.5rem;
 	}
 	.development {
+		grid-template-columns: 350px 350px;
+	}
+	.projects {
 		grid-template-columns: 350px 350px;
 	}
 	.dev-7 {
