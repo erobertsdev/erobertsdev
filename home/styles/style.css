@@ -255,6 +255,10 @@ h3 {
 	justify-content: center;
 }
 
+.project-4 {
+	grid-column-start: 2;
+}
+
 .info-icon {
 	font-size: 6rem;
 	padding-bottom: 10px;
@@ -479,6 +483,9 @@ footer {
 	.menu-list {
 		top: 9rem;
 		right: 8rem;
+	}
+	.project-4 {
+		grid-column-start: auto;
 	}
 }
 
