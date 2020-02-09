@@ -220,9 +220,9 @@ hr {
 	line-height: 1.5rem;
 }
 
-.dev-7 {
+/* .dev-7 {
 	grid-column-start: 2;
-}
+} */
 
 h3 {
 	font-size: 3rem;
@@ -268,6 +268,93 @@ h3 {
 	padding: 10px;
 	list-style: none;
 	color: #e8f1f2;
+}
+
+.js30 {
+}
+
+#js30-btn {
+	margin: 0 auto;
+	width: 150px;
+	border: 1px solid #2f2f2f;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #465c69b6;
+	color: #92b4a7;
+	font-size: 2rem;
+	box-shadow: 8px 8px 8px #2f2f2f;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+#js30-btn:hover {
+	color: #e8f1f2;
+	transform: translateY(-5px);
+	box-shadow: 10px 13px 20px #2f2f2f;
+}
+
+#js30-btn:active {
+	color: #e27e5f;
+	transform: translateY(0px);
+	box-shadow: 7px 8px 15px #2f2f2f;
+}
+
+.js-projects {
+	box-sizing: border-box;
+	margin: 20px;
+	height: 0;
+	background-color: #465c69b6;
+	color: #e8f1f2;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+	grid-auto-rows: minmax(250px, auto);
+	grid-auto-flow: row;
+	grid-gap: 20px;
+
+	transition: height 1s;
+}
+
+.js-project {
+	border: 1.5px solid #e8f1f2;
+	border-radius: 5px;
+	height: 250px;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.js-project:hover {
+	border: 1.5px solid #e27e5f;
+}
+
+.game-title {
+	font-size: 2rem;
+	color: #e8f1f2;
+}
+
+.connect-four {
+	background-image: linear-gradient(#8e9b90c2, #465c69c2), url(../images/connect-four.png);
+	background-size: contain;
+}
+
+.placeholder {
+	background-image: linear-gradient(#8e9b90c2, #465c69c2), url(../images/more.png);
+	background-size: contain;
+}
+
+.grow {
+	height: 400px;
+	padding: 20px;
+}
+
+.hide {
+	display: none;
+}
+
+.project-fade-in {
+	animation: fadein 1s linear .8s;
+	animation-fill-mode: backwards;
 }
 
 .contact {
@@ -454,9 +541,9 @@ footer {
 	.projects {
 		grid-template-columns: 350px 350px;
 	}
-	.dev-7 {
+	/* .dev-7 {
 		grid-column-start: auto;
-	}
+	} */
 }
 
 @media all and (max-width: 750px) {
@@ -486,6 +573,9 @@ footer {
 	}
 	.project-4 {
 		grid-column-start: auto;
+	}
+	.grow {
+		height: 580px;
 	}
 }
 
