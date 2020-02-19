@@ -313,6 +313,10 @@ h3 {
 	justify-content: center;
 }
 
+.project-5 {
+	grid-column-start: 3;
+}
+
 .info-icon {
 	font-size: 6rem;
 	padding-bottom: 10px;
@@ -602,6 +606,9 @@ footer {
 	.projects {
 		-ms-grid-columns: 350px 40px 350px;
 		grid-template-columns: 350px 350px;
+	}
+	.project-5 {
+		grid-column-start: auto;
 	}
 }
 
