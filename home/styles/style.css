@@ -274,10 +274,17 @@ hr {
 	line-height: 1.5rem;
 }
 
+.card-hr {
+	color: #e8f1f2;
+	width: 80%;
+	margin: 0 auto;
+}
+
 h3 {
 	font-size: 3rem;
 	color: #92b4a7;
 	padding: 20px;
+	padding-bottom: 7px;
 }
 
 .icon {
