@@ -263,7 +263,6 @@ hr {
 	-webkit-box-shadow: 8px 8px 8px #2f2f2f;
 	box-shadow: 8px 8px 8px #2f2f2f;
 	width: 350px;
-	min-width: 350px;
 	min-height: 250px;
 	margin: 30px 30px;
 	padding: 30px;
@@ -638,9 +637,9 @@ footer {
 		top: 9rem;
 		right: 8rem;
 	}
-
 	.card {
 		margin: 30px 10px;
+		width: 90vw;
 	}
 }
 
