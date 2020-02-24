@@ -34,6 +34,10 @@ a {
 	color: #92b4a7;
 }
 
+a:hover {
+	color: #e27e5f;
+}
+
 .text-light {
 	color: #e8f1f2;
 }
@@ -302,6 +306,10 @@ h3 {
 	color: #8e9b90;
 	font-size: 8rem;
 	padding-bottom: 10px;
+}
+
+.project-icon:hover {
+	color: #e27e5f;
 }
 
 .development {
