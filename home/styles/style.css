@@ -236,6 +236,11 @@ hr {
 	text-align: center;
 }
 
+.certs {
+	background-color: #465c69b6;
+	color: #e8f1f2;
+}
+
 .header-2 {
 	font-size: 3.5rem;
 	padding: 20px;
@@ -294,8 +299,11 @@ h3 {
 	font-size: 4rem;
 	font-weight: bolder;
 	color: #92b4a7;
-	/* padding: 20px; */
 	padding-bottom: 7px;
+}
+
+.card.cert {
+	margin-bottom: 40px;
 }
 
 .cert > hr {
