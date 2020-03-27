@@ -296,6 +296,13 @@ h3 {
 	padding-bottom: 7px;
 }
 
+.cert > hr {
+	margin: 10px auto;
+}
+.cert > h3 {
+	margin: 0;
+}
+
 .icon {
 	color: #8e9b90;
 	font-size: 10rem;
@@ -638,8 +645,8 @@ footer {
 		right: 8rem;
 	}
 	.card {
-		margin: 30px 10px;
-		width: 90vw;
+		margin: 20px 10px;
+		width: 300px;
 	}
 }
 
