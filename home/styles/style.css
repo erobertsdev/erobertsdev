@@ -660,6 +660,9 @@ footer {
 		margin: 20px 10px;
 		width: 95vw;
 	}
+	.header-2 {
+		font-size: 3.5rem;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-device-height: 640px) {
