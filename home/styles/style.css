@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-	color: #e27e5f;
+	filter: brightness(120%);
 }
 
 .text-light {
@@ -231,7 +231,7 @@ hr {
 
 .main {
 	font-size: 1.5rem;
-	background-color: #e8f1f2;
+	background-color: #5570805e;
 	padding: 3.5rem 2rem;
 	text-align: center;
 }
@@ -242,6 +242,7 @@ hr {
 	text-transform: uppercase;
 	color: #92b4a7;
 	letter-spacing: .5rem;
+	text-shadow: 1px 1px #5f5f5f;
 }
 
 .card {
@@ -327,7 +328,7 @@ h3 {
 }
 
 .project-icon:hover {
-	color: #e27e5f;
+	filter: brightness(120%);
 }
 
 .development {
