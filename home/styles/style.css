@@ -180,6 +180,7 @@ a:hover {
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	border-bottom: 1px solid black;
 }
 
 .heading-main {
@@ -234,6 +235,7 @@ hr {
 	background-color: #5570805e;
 	padding: 3.5rem 2rem;
 	text-align: center;
+	border-bottom: 1px solid black;
 }
 
 .header-2 {
@@ -381,6 +383,7 @@ h3 {
 	text-align: center;
 	background-color: #465c69b6;
 	color: #e8f1f2;
+	border-bottom: 1px solid black;
 }
 
 form {
