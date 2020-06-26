@@ -128,7 +128,7 @@ a:hover {
 .menu-list {
 	position: fixed;
 	top: 15rem;
-	right: 5.5rem;
+	right: 11rem;
 	list-style: none;
 	text-align: center;
 }
@@ -667,7 +667,7 @@ footer {
 	}
 	.menu-list {
 		top: 9rem;
-		right: 2.5rem;
+		right: 8rem;
 	}
 	.card {
 		margin: 20px 10px;
@@ -684,6 +684,6 @@ footer {
 @media screen and (orientation: landscape) and (max-device-height: 640px) {
 	.menu-list {
 		top: 9rem;
-		right: 5.5rem;
+		right: 9rem;
 	}
 }
