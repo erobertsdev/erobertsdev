@@ -433,6 +433,10 @@ h3 {
 	-webkit-text-stroke: 1px #2f2f2f;
 }
 
+.tech-icon:hover {
+	filter: brightness(120%);
+}
+
 .projects {
 	width: 80%;
 	margin: 0 auto;
