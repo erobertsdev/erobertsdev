@@ -427,6 +427,12 @@ h3 {
 	margin-top: 20px;
 }
 
+.tech-icon {
+	margin: 10px;
+	color: #92b4a7;
+	-webkit-text-stroke: 1px #2f2f2f;
+}
+
 .projects {
 	width: 80%;
 	margin: 0 auto;
