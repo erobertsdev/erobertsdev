@@ -54,6 +54,10 @@ a:hover {
 	color: #92b4a7;
 }
 
+.text-dark-green {
+	color: #8e9b90;
+}
+
 .menu .menu-checkbox {
 	display: none;
 }
@@ -404,8 +408,43 @@ h3 {
 	display: flex;
 	align-items: center;
 }
+
 .service-card-front > h3 {
 	margin-top: 0;
+}
+
+.flip-card {
+	background-color: transparent;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateX(180deg);
+}
+
+.service-card-front,
+.service-card-back {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.service-card-back {
+	background-color: #2f2f2f;
+	color: #e8f1f2;
+	transform: rotateX(180deg);
 }
 
 .technologies {
@@ -791,39 +830,4 @@ footer {
 		top: 8rem;
 		right: 13rem;
 	}
-}
-
-/* FLIP EFFECTS */
-
-.flip-card {
-	background-color: transparent;
-}
-
-.flip-card-inner {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	transition: transform 0.5s;
-	transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-	transform: rotateX(180deg);
-}
-
-.service-card-front,
-.service-card-back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	/* line-height: 50px; */
-}
-
-.service-card-back {
-	background-color: #2f2f2f;
-	color: #e8f1f2;
-	transform: rotateX(180deg);
 }
