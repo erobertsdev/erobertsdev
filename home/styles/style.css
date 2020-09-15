@@ -303,6 +303,7 @@ hr {
 }
 
 .card-p {
+	color: #e8f1f2a2;
 	font-size: 1.8rem;
 	padding: 10px;
 	line-height: 1.8rem;
@@ -315,12 +316,6 @@ hr {
 	padding: 10px;
 	list-style: none;
 	color: #e8f1f2;
-}
-
-#freelance-status {
-	background-color: #2f2f2f;
-	padding: 3px 10px;
-	border: 1px solid #e8f1f2;
 }
 
 .card-hr {
