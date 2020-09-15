@@ -454,6 +454,7 @@ h3 {
 .project-title {
 	font-size: 4rem;
 	margin-top: -10px;
+	filter: drop-shadow(1px 1px 1px black);
 }
 
 .hide {
