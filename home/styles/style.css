@@ -311,11 +311,13 @@ hr {
 }
 
 .card-list {
+	margin-top: 10px;
 	font-size: 1.8rem;
 	font-weight: bold;
 	padding: 10px;
 	list-style: none;
-	color: #e8f1f2;
+	color: #92b4a7;
+	text-shadow: 1px 1px 1px #2f2f2f;
 }
 
 .card-hr {
