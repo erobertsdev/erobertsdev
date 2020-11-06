@@ -391,6 +391,26 @@ h3 {
 	filter: brightness(120%);
 }
 
+#tree-icon {
+	color: rgba(0, 100, 0, 0.2);
+}
+
+#blog-icon {
+	color: rgba(255, 0, 0, 0.2);
+}
+
+#camera-icon {
+	color: rgba(30, 143, 255, 0.2);
+}
+
+#gamepad-icon {
+	color: rgba(255, 166, 0, 0.2);
+}
+
+#cloud-icon {
+	color: rgba(128, 0, 128, 0.2);
+}
+
 .project-card {
 	border: 1px solid #2f2f2f;
 }
