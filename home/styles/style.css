@@ -183,7 +183,7 @@ a:hover {
 }
 
 .header {
-	height: 80vh;
+	height: 100vh;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#8e9b90c2), to(#465c69c2)),
 		url(../images/cabezon-peak.jpg);
 	background-image: -o-linear-gradient(#8e9b90c2, #465c69c2), url(../images/cabezon-peak.jpg);
