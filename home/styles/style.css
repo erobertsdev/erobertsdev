@@ -794,7 +794,7 @@ footer {
 	}
 	.card {
 		margin: 20px 10px;
-		width: 95vw;
+		max-width: 95vw;
 	}
 	/* .tech-card {
 		height: 100px;
