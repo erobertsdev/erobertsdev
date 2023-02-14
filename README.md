@@ -1,5 +1,5 @@
 # Elias Adams-Roberts
-## Pentester / Web Developer / IT Specialist
+## Web Developer / IT Specialist
 
 https://eroberts.dev - Always a work in progress.
 
