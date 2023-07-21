@@ -5,4 +5,4 @@ I am a highly innovative and dynamic software developer with a deep understandin
 
 So, according to the market, a junior dev.
 
-Just kidding. Sort of.
+Just kidding... sort of.
