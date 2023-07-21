@@ -6,3 +6,6 @@ I am a highly innovative and dynamic software developer with a deep understandin
 So, according to the market, a junior dev.
 
 Just kidding... sort of.
+
+### Some Things I Actually Know:
+Java, JavaScript, JavaFX, HTML, CSS, SCSS, SASS, Bootstrap, PHP, Python, BASH, React, Node.js, Express, SQL, NoSQL, MySQL, PostgreSQL, MongoDB, Mongoose, Firebase, APIs, REST, SOAP, AJAX, XML, Version Control, Git, GitHub
